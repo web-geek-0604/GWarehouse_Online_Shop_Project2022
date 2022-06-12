@@ -1,0 +1,1461 @@
+
+*{
+    margin:0 0;
+    padding:0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.container-video{
+  width: 50%;
+  margin: 30px auto;
+}
+.container-kategorije{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-naruci{
+  width: 70%;
+  margin-left: 100px;
+  padding: 40px;
+}
+
+.container-kontakt{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.container-kontakt2{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.container-gpu{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.container-ponuda{
+  width: 100%;
+  padding: 1%;
+}
+
+.container-header{
+  width: 85%;
+}
+
+.container1{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color:#273c75;
+    text-decoration: none;
+}
+a:hover{
+    color: #192a56;
+}
+
+b{
+  color:white;
+    text-decoration: none;
+}
+b:hover{
+  color: #dcdde1;
+}
+
+.btn{
+   padding: 0.5%;
+   border:none;
+   font-size: 15px;
+   border-radius: 6px;
+}
+
+
+.btn-primary{
+    color: #273c75;
+    font-weight:300;
+    cursor:pointer;
+}
+
+.btn-primary:hover{
+    background-color: #dcdde1;
+    color: #192a56;
+}
+
+.btn-poruci{
+  color: white;
+  background-color: #273c75;
+  font-size: 20px;
+  font-weight: 400;
+  padding:10px;
+  cursor:pointer;
+}
+
+.btn-poruci:hover{
+  background-color: #192a56;
+  color: #f5f6fa;
+}
+
+
+.logo{
+    height: 20%;
+    width: 15%;
+    float: left;
+}
+
+@keyframes movedown{
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.img-curve{
+    border-radius: 10px;
+}
+
+.text-desno{
+    text-align: right;
+}
+
+.text-levo{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-center1{
+  text-align: center;
+  padding: 2% 0;
+}
+
+
+.text-animation{
+  margin:0 auto;
+  animation: moveright 1s linear 1;
+  animation-delay: 1.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.text-align{
+  text-align: center;
+}
+
+.text-position{
+  margin: 100px auto;
+}
+
+@keyframes moveright{
+  0%{
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.menu{
+    line-height: 180px;
+    font-size: 14pt;
+}
+
+.menu2{
+  line-height: 1px;
+  margin: -6% 0;
+}
+
+.menu2 ul{
+  list-style-type: none;
+}
+
+.menu2 ul li{
+  display:inline;
+  padding: 1%;
+  font-weight: bold;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display:inline;
+    padding: 1%;
+    font-weight: bold;
+}
+img{
+    width: 100px;
+    height: 200px;
+}
+
+.float-container{
+    position:relative;
+}
+
+.float-text{
+    position: absolute;
+    bottom: 20px;
+    left: 180px;
+    color: white;
+}
+
+/* css za slideshow */
+
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 100px 550px;
+  }
+
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css za manuelnu promenu slika*/
+   
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+
+  #radio5:checked ~ .first{
+    margin-left: -80%;
+  }
+
+  #radio6:checked ~ .first{
+    margin-left: -100%;
+  }
+
+  #radio7:checked ~ .first{
+    margin-left: -120%;
+  }
+
+  #radio8:checked ~ .first{
+    margin-left: -140%;
+  }
+
+  #radio9:checked ~ .first{
+    margin-left: -160%;
+  }
+
+  #radio10:checked ~ .first{
+    margin-left: -180%;
+  }
+  /*css za automatsku promenu slika*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    display: hidden;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    display: none;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    display: none;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    display: none;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    display: none;
+  }
+
+  #radio5:checked ~ .navigation-auto .auto-btn5{
+    display: none;
+  }
+
+  #radio6:checked ~ .navigation-auto .auto-btn6{
+    display: none;
+  }
+
+  #radio7:checked ~ .navigation-auto .auto-btn7{
+    display: none;
+  }
+
+  #radio8:checked ~ .navigation-auto .auto-btn8{
+    display: none;
+  }
+
+  #radio9:checked ~ .navigation-auto .auto-btn9{
+    display: none;
+  }
+
+  #radio10:checked ~ .navigation-auto .auto-btn10{
+    display: none;
+  }
+
+  /* css za pozadinu */
+
+  .pozadina-index{
+    background-image: url(../slike/MSI-RTX-3090-Ti.jpg);
+    background-position: relative;
+    height: 500px;
+  }
+
+  .pozadina-naruci{
+    background-image: url(../slike/geforce-ampere-30-series-og-image-1200x630.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+/* css za kategorije */
+
+  .kategorije{
+     color: #273c75;
+     padding: 4% 0;
+  }
+
+  .box-2{ 
+     width: 25%;
+     transition: transform .2s;
+    margin: 1% auto;
+  }
+
+  .box-2:hover{
+    transform: scale(1.2);
+  }
+
+  /* css za ponudu */
+
+  .ponuda{
+     color: #273c75;
+     margin: 0 auto;
+     background-color: #f5f6fa;
+     width: 90%;
+  }
+
+  .ponuda1{
+    color: #273c75;
+    padding: 2% 4%;
+    background-color: white
+ }
+
+  .ponuda-box1{
+    color: #273c75;
+    border-radius: 5px;
+    width: 33%;
+    margin: 1%;
+    float:left;
+    background-color: #f1f2f6;
+    padding: 1%;
+    margin-left: 9%;
+  }
+
+  .ponuda-box2{
+    color: #273c75;
+    border-radius: 5px;
+    width: 33%;
+    margin: 1%;
+    float:left;
+    background-color: #f5f6fa;
+    padding: 1%;
+    margin-left: 9%;
+  }
+
+  .ponuda-img{
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .ponuda-opis{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    font-weight: bold;
+  }
+
+  .ponuda-cena{
+    font-size: 1.2rem;
+    margin:2% 0;
+    font-weight: 100;
+  }
+
+  .text-velicina{
+    font-size: 25px;
+    padding: 1%;
+  }
+
+  .text-velicina1{
+    font-size: 25px;
+    padding: 4%;
+  }
+
+
+  
+
+  /*o-nama css*/
+
+  .container-onama{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  .partner-box1{
+    width: 35%;
+    padding: 1px;
+    margin: 103px auto;
+  }
+
+  .partner-box2{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1px;
+  }
+  
+  .partner-box3{
+    width: 45%;
+    margin: 100px auto;
+  }  
+
+  .partner-box4{
+    width: 50%;
+    margin: 100px auto;
+    padding: 5px;
+  } 
+  
+  .partner-box5{
+    width: 30%;
+    margin: 70px auto;
+    padding: 5px;
+  } 
+
+  .partner-box6{
+    width: 45%;
+    margin: 55px auto;
+    padding: 50px;
+  }  
+  
+  .partner-img{
+    width: 30%;
+    margin: 0 auto;
+  }
+  .img-responsive1{
+    width: 100%;
+    height: 100%;
+  }
+
+  .partneri{
+      color: #273c75;
+      background-color: #f5f6fa;
+   }
+
+   /*css za proizvode*/
+
+   .box-3{
+      width: 20%;
+      float:left;
+      margin-left: 16.5%;
+      margin-top: 1%;
+   }
+
+   .box-4{
+      width: 35%;
+      float:left;
+      margin-left: 16.5%;
+      margin-top: 1%;
+  
+   }
+
+   /*css za kontakt*/
+
+   .text-position{
+     margin:2% auto;
+   }
+
+   .tbl-cela{
+    margin: 15px auto;
+}
+
+    .tbl-cela tr th{
+      padding: 10px 1px;
+      text-align: center;
+      margin: 0 auto;
+   }
+
+   .tbl-cela tr td{
+    text-align: left;
+    text-decoration: #192a56;
+ }
+
+  .tbl-width{
+    width: 20px;
+  }
+
+   .kontakt{
+      color: #273c75;
+      padding: 1% 0;
+   }
+
+   .kontakt-ikonice{
+     display: flex;
+     margin: 0 auto;
+   }
+
+   .kontakt-ikonice img{
+      width: 50px;
+      height: auto;
+      margin: 0 150px;
+   }
+
+   .ikonice-box{
+     margin: 0 auto;
+   }
+
+   .kontakt-text{
+    display: flex;
+    margin: 0 auto;
+   }
+
+   .text-ispod-ikonica{
+     display: flex;
+     margin: 0 auto;
+   }
+
+   .text-ispod-ikonica p{
+    display: flex;
+    width: 70%;
+    margin: 0 160px;
+  }
+
+   .ikone-velicina{
+     width:5%;
+   }
+
+   .ikonica-img{
+    width: 10%;
+    margin-left: 142px;
+    margin-top: -10px;
+  }
+
+  .img-responsive-ikonica{
+    width: 4%;
+    height: 4%;
+  }
+
+  .ikonica-box{
+    color: #273c75;
+    border-radius: 10px;
+    width: 25%;
+    margin: 0% auto;
+    float:center;
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: -100px;
+    margin-bottom: 1%;
+  }
+  .menu3{
+    line-height: 1px;
+    margin: -6% 0;
+  }
+  
+  .menu3 ul{
+    list-style-type: none;
+  }
+  
+  .menu3 ul li{
+    display:inline;
+    padding: 10%;
+    font-weight: bold;
+  }
+
+  .menu4{
+    line-height: 10px;
+    margin-top: -1%;
+    margin-left: -3%;
+  }
+  
+  .menu4 ul{
+    list-style-type: none;
+  }
+  
+  .menu4 ul li{
+    display:inline;
+    padding: 6.2%;
+    font-weight: bold;
+  }
+
+  .wrapper{
+    margin: 100px auto;
+    max-width: 350px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 5px; 
+    border:2px solid #273c75;
+  }
+  
+  .wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+  }
+  
+  .wrapper .input_field{
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+  }
+  
+  .wrapper .input_field input[type="text"],
+  .wrapper textarea{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .wrapper textarea{
+    resize: none;
+    height: 80px;
+  }
+  
+  .wrapper .btn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: #273c75;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  #error_message{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+
+  /*css za naruci*/
+
+  .order{
+    width: 50%;
+    margin-top: 1%;
+
+}
+
+.naruci-img{
+  width: 20%;
+  float: left;
+  margin-left: 2%;
+}
+
+.item-desc{
+  width: 70%;
+  float: left;
+  margin-left: 8%;
+}
+
+.item-price{
+  font-size: 1.2rem;
+  margin: 2% 0;
+}
+
+.input-responsive{
+  width: 70%;
+  padding: 1%;
+  margin-left: 13%;
+  margin-bottom: 3%;
+  margin-top: 1%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.order-label{
+  margin-bottom: 2%; 
+  font-weight: bold;
+  margin-left: 13%;
+  margin-top: 2%;
+}
+
+.text-white{
+  color: white;
+}
+
+.btn3{
+  padding: 2%;
+  border:none;
+  font-size: 18px;
+  border-radius: 6px;
+  margin: 5% 35%;
+}
+
+/*css za amd kartice*/
+#amd_video {
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  max-width: 1000px;
+  max-height: 900px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+.admin-margin{
+  margin-left: 90px;
+  padding: 1px;
+}
+
+.uspesno-msg{
+  padding: 2%;
+  color:green;
+}
+.greska-msg{
+  padding: 2%;
+  color:red;
+}
+
+.admin-font{
+  font-size: 18px;
+}
+
+/*css za footer*/
+.footer{
+  background-color: #273c75;
+  color: white;
+}
+
+.footer-text{
+  font-size: 11pt;
+  text-align: center;
+  padding: 10px;
+}
+
+/*css za stranice proizvoda*/
+.articles {
+  background-color: #f5f6fa;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.column {
+  width: 600px;
+  padding: 10px;
+}
+
+.specifikacije-text {
+  margin-left: 20.2%;
+  margin-top: 150px;
+  margin-bottom: -6.5%;
+  font-size: x-large;
+}
+
+.table-position {
+  margin: 150px auto;
+  color: #2c2c2ece;
+}
+
+#table1{
+  border: 1px solid black;
+  background-color: #f5f6fa;
+  border-collapse: collapse;
+  padding: 1%;
+}
+
+.td-border{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#table2{
+  border: none;
+  background-color: #f5f6fa;
+  border-collapse: collapse;
+  padding: 1%;
+}
+
+.izbor-text {
+  margin: 50px auto;
+  text-align: center;
+  padding: 50px;
+  font-size: x-large;
+  color: #273c75;
+}
+
+#featured {
+  max-width: 532px;
+  max-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.o-kartici {
+  text-align: center;
+  font-size: x-large;
+  padding-top: 100px;
+}
+
+.kartica-cena {
+  font-size: xx-large;
+  text-align: center;
+  padding-left: 30px;
+  padding-top: 10px;
+  color: #273c75;
+  padding-bottom: 30px;
+}
+
+a {
+  color: #273c75;
+  text-decoration: none;
+}
+
+.btn2 {
+  border-radius: 6px;
+  padding: 0.5%;
+  border: none;
+  font-size: 15px;
+}
+
+.btn-poruci2 {
+  margin: 20px auto;
+  color: white;
+  background-color: #273c75;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-poruci2:hover {
+  background-color: #192a56;
+  color: #f5f6fa;
+}
+
+.text-center {
+  text-align: center;
+  padding: 2% 0;
+}
+
+.menu3 {
+  line-height: 1px;
+  margin: -6% 0;
+}
+
+.menu3 ul {
+  list-style-type: none;
+}
+
+.menu3 ul li {
+  display: inline;
+  padding: 10%;
+  font-weight: bold;
+}
+
+.img-responsive-ikonica {
+  width: 250px;
+  height: 4%;
+}
+
+.img-responsive-ikonica1 {
+  min-width: 8%;
+  margin-top: 10%;
+  height: 4%;
+}
+
+.container-sponsor{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+  height: 600px;
+}
+
+  /*css za mobilne uredjaje*/
+
+  @media only screen and (max-width:1400px){
+    .logo{
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+      min-width: 150px;
+      float:none;
+      margin:0 auto;
+    }
+
+  .menu2{
+    line-height: 60px;
+    margin-left: 200px;
+  }
+  
+  .menu2 ul{
+    list-style-type: none;
+  }
+  
+  .menu2 ul li{
+    display:block;
+    padding: 3%;
+    font-weight: bold;
+  }
+
+    .menu{
+      line-height: 60px;
+      font-size: 12pt;
+  }
+
+  .menu ul{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.menu ul li{
+    display:block;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+    .text-desno{
+      text-align: center;
+  }
+
+    .container{
+      width: 50%;
+      margin-left:250px;
+      padding: 1%;
+  }
+
+  .container-video{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container-kategorije-box{
+    width: 100%;
+    margin: 0 auto;
+}
+  .container-kontakt{
+      width: 100%;
+      padding: 1%;
+  }
+
+  .container-kontakt2{
+    width: 100%;
+    padding: 1%;
+}
+
+  .container-naruci{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+  .menu4 ul{
+    list-style-type: none;
+  }
+  
+  .menu4 ul li{
+    display:inline;
+    margin-left: -150px;
+    font-weight: bold;
+  }
+
+  .menu3 ul{
+    list-style-type: none;
+  }
+  
+  .menu3 ul li{
+    display:inline;
+    margin-left: -140px;
+    font-weight: bold;
+  }
+
+  .container-gpu{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  .container-header{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container-partneri{
+  width: 30%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+  .container1{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container-onama{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+
+  .text-velicina{
+    font-size: 17px;
+  }
+  
+
+  .text-center1{
+    margin: 0 auto;
+  }
+
+  .text-velicina1{
+    font-size: 20px;
+    padding: 4%;
+  }
+
+
+    .slider{
+      margin:0 auto;
+    }
+
+    .box-2{
+      width:30%;
+      max-width: 30%;
+      margin:10px auto;
+    }
+
+    .float-text{
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      font-size: smaller;
+      color: white;
+  }
+    .box-2:hover{
+      transform: scale(1.2);
+    }
+
+    .ponuda{
+      color: #273c75;
+      padding: 2% 0;
+      background-color: #f5f6fa;
+   }
+
+    .ponuda-box1{
+      min-width: 200px;
+      margin: 2% 30%;
+    }
+
+    .ponuda-img{
+      min-height: 50px;
+      min-width: 120px;
+      margin: 0 auto;
+    }
+
+    .ponuda-opis{
+      font-size: 10pt;
+      width: 80%;
+      margin: 0 auto;
+      padding: 30px;
+      font-weight: bold;
+    }
+
+    .ponuda-cena{
+      font-size: 1.0rem;
+      margin:2% 0;
+      font-weight: 100;
+    }
+
+    .btn{
+      padding: 0.3%;
+      border:none;
+      font-size: 15px;
+      border-radius: 6px;
+   }
+
+   .btn-poruci{
+    color: white;
+    background-color: #273c75;
+    font-size: 13px;
+    font-weight: 400;
+    padding:10px;
+    cursor:pointer;
+  }
+
+    .footer{
+      margin: 0 auto;
+    }
+
+    .footer-text{
+      font-size: 9pt;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .text-align{
+      text-align: justify;
+    }
+  .partner-box1{
+    color: #273c75;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5px;
+    margin: 37px auto;
+  }
+
+  .partner-box2{
+    color: #273c75;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: -3px;
+  }
+  
+  .partner-box3{
+    color: #273c75;
+    border-radius: 10px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 5px;
+  }  
+
+  .partner-box4{
+    color: #273c75;
+    border-radius: 10px;
+    width: 82%;
+    margin: 50px auto;
+    padding: 5px;
+  }
+  
+  .partner-box5{
+    color: #273c75;
+    border-radius: 10px;
+    width: 65%;
+    margin: 50px auto;
+    padding: 5px;
+  }  
+
+  .partner-box6{
+    color: #273c75;
+    border-radius: 10px;
+    width: 75%;
+    margin: 50px auto;
+    padding: 5px;
+  }
+  
+  .container-gpu{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    display: block;
+  }
+  .box-3{
+    max-width: 100%;
+    height: auto;
+    float:center;
+    margin-left: 16.5%;
+    margin-top: 1%;
+    display: block;
+ }
+
+  .partner-img{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .img-responsive1{
+    width: 100%;
+    height: 100%;
+  }
+
+  #amd_video {
+    right: 0;
+    bottom: 0;
+    padding: 0px;
+    max-width: 486px;
+    max-height: 900px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+  }
+
+  .izbor-text {
+    margin: 50px auto;
+    text-align: center;
+    padding: 50px;
+    font-size: 14pt;
+    color: #273c75;
+  }
+
+  .articles {
+    background-color: #f5f6fa;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #featured {
+    max-width: 450px;
+    max-height: 600px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+  .o-kartici {
+    text-align: center;
+    font-size: 15pt;
+    padding-top: 50px;
+  }
+
+  .kartica-cena {
+    font-size: 20pt;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: #273c75;
+    padding-bottom: 30px;
+  }
+
+  .btn2 {
+    border-radius: 6px;
+    padding: 0.5%;
+    border: none;
+    font-size: 15px;
+  }
+  
+  .btn-poruci2 {
+    margin: 0 auto;
+    color: white;
+    background-color: #273c75;
+    font-size: 15pt;
+    font-weight: 400;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .wrapper{
+    margin: 100px auto;
+    max-width: 300px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 5px; 
+    border:2px solid #273c75;
+  }
+  
+  .wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+    font-size: 13pt;
+  }
+  
+  .wrapper .input_field{
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+  }
+  
+  .wrapper .input_field input[type="text"],
+  .wrapper textarea{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .wrapper textarea{
+    resize: none;
+    height: 80px;
+  }
+  
+  .wrapper .btn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: #273c75;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  #error_message{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+
+  .tbl-cela{
+    font-size: 10.5pt;
+}
+
+/*css za stranicu za narucivanje*/
+.text-white{
+  color: white;
+  font-size: 13pt;
+}
+
+.naruci-img{
+  width: 20%;
+  float: left;
+  margin-left: 2%;
+}
+
+.item-desc{
+  width: 70%;
+  float: left;
+  margin-left: 8%;
+  font-size: 10pt;
+}
+
+.item-price{
+  font-size: 14pt;
+  margin: 2% 0;
+}
+
+.order-label{
+  margin-bottom: 2%; 
+  font-weight: bold;
+  margin-left: 13%;
+  margin-top: 2%;
+  font-size: 11pt;
+}
+
+.admin-margin{
+  margin: 20px 13%;
+}
+
+.order-label1{
+  margin: 5px 13%;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.admin-font{
+  font-size: 16px;
+  padding: 2px;
+}
+
+.btn3{
+  padding: 1%;
+  border:none;
+  font-size: 17px;
+  border-radius: 6px;
+  margin: 3% 13%;
+}
+  }
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+

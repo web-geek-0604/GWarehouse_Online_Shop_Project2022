@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-stil{
+    padding: 1%;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.menu-stil1{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-size{
+    font-size: 170%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+/* css za menu */
+.menu{
+    border-bottom: 2px solid #192a56;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    color: #273c75;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: #192a56;
+}
+
+
+/* css za sadrzaj */
+.sadrzaj{
+    background-color: #dcdde1;
+    padding-bottom: 25%;
+    padding-top: 2%;
+
+}
+
+.white-bcg{
+    background-color: #ffffff;
+}
+
+
+.polje1{
+    width: 15%;
+    background-color: white;
+    float: left;
+    padding: 2%;
+    margin: 1%;
+}
+
+.polje2{
+    width: 25%;
+    background-color: white;
+    float: left;
+    padding: 2%;
+    margin: 1%;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* css za footer */
+
+.footer{
+    background-color: #273c75;
+    color: white;
+}
+
+.footer-container{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 11pt;
+}
+
+.tbl-cela{
+    width: 100%;
+}
+
+.tbl-cela1{
+    width: 110%;
+}
+
+.tbl-admin{
+    width:30%;
+}
+
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: center;
+}
+
+table tr td{
+   padding: 1%;
+   text-align: center;
+}
+
+.table2 tr td{
+    padding: 1.5%;
+ }
+
+.table1 tr td{
+    padding: 0.5%;
+    width: 100px;
+ }
+
+ .tbl-cela4{
+     width: 50%;
+     background-color: #dcdde1;
+ }
+
+ .table4 tr th{
+    border-bottom: 1px solid black;
+    padding: 1px 90px;
+    text-align: center;
+ }
+
+ .table4 tr td{
+     padding: 0.4%;
+ }
+
+.btn1{
+    background-color: #273c75;
+    padding:0.7%;
+    margin-left: 30px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn1:hover{
+    background-color: #192a56;
+    color: #dcdde1;
+}
+
+.btn2{
+    background-color: #1abc9c;
+    padding:1%;
+    margin-left: 5px;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn2:hover{
+    background-color: #16a085;
+    color: black;
+}
+
+.btn3{
+    background-color: #00a8ff;
+    padding:1%;
+    margin-left: 5px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn3:hover{
+    background-color: #0097e6;
+    color: #dcdde1;
+}
+
+.btn4{
+    background-color: #273c75;
+    padding:1%;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn4:hover{
+    background-color: #192a56;
+    color: #dcdde1;
+}
+
+.btn5{
+    background-color: #1abc9c;
+    padding:1%;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn5:hover{
+    background-color: #16a085;
+    color: black;
+}
+
+.btn6{
+    background-color: #1abc9c;
+    padding:1%;
+    margin-left: 58%;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn6:hover{
+    background-color: #16a085;
+    color: black;
+}
+
+/*css za dodaj-admina */
+
+input[type=password]{
+    width: 80%;
+}
+
+
+input[name="ime_i_prezime"]{
+    width: 80%;  
+}
+
+input[name="korisnicko_ime"]{
+    width: 80%;  
+}
+
+.uspesno-msg{
+    color: #009432;
+}
+
+.greska-msg{
+    color: #c0392b;
+}
+
+.admin-font{
+    font-size: 16px;
+  }
+
+
+
+/*css za login*/
+
+.login{
+    width: 20%;
+    border:2px solid #273c75;
+    border-radius: 8px;
+    margin: 200px auto;
+    padding: 2%;
+    color: #273c75;
+    background-color: #f5f6fa;
+}
+
+/*css za tooltip*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -200px;
+    margin-bottom: -250px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+
